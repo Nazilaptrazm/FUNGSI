@@ -1,1 +1,26 @@
-#include <iostream> 
+#include <iostream>
+using namespace std;
+
+void garis(){
+	cout << "\n=====================================\n";
+}
+
+void hargaDiskon (int harga, int jumlah, int diskon){
+	int totalHarga, hargabarang;
+	
+	garis();
+	cout << "\n";
+	
+	hargabarang = jumlah*harga;
+	diskon = (harga*jumlah)*10/100;
+	totalHarga = (jumlah*harga) - diskon;
+	
+	cout << "Total Harga Keseluruhan adalah " << totalHarga << " " << endl;
+	garis();
+}
+
+int main(){
+	hargaDiskon (10000, 2, 10);
+	
+	return 0;
+}
